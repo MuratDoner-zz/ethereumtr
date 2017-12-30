@@ -1,0 +1,23 @@
+(Özgür Özvarış Bey tarafından başlatılan döküman, zamânla güncellenmek üzere eklendi.)
+
+1 . Aşama https://ethereum.org/cli burada belirtilen linklerden işletim sistemine göre doğru geth indirilip kuruluyor. Windows için https://geth.ethereum.org/downloads/ bu link kullanılabilir 
+
+2. Aşama geth setup kuruluyor (bütün kurulumları run as administrator olarak kurmakta vayda görüyorum.) 
+
+3. Mist kurulması https://github.com/ethereum/mist/releases buradan mist kuruyoruz.. 
+
+4. private ethereum networku kurulması cmd.exe run as administrator olarak çalıştırılıyor. Cd komutuyla geth in kurulu olduğu foldera gidiliyor. 
+
+Bendeki yeri cd "c:\program files\geth" burası 
+
+5. genesis.json oluşturulması  https://github.com/tomw1808/truffle_eth_class2/blob/master/s01/genesis.json buradakigenesis.jsonu örnek alabilirsiniz. 
+
+6. genesis dosyasını geth.exe nin olduğu klasöre koyuyoruz 
+
+7 – private networkun initialize edilmesi geth --datadir=./chaindata init ./genesis1.json  
+
+8 – Bu aşamanın tam olarak ne olduğunu bilmiyorum ama sanırım listening yapmaya başlıyor. geth --datadir=./chaindata   
+
+9 – mist'in çalıştırılması... 
+
+10 – mist te sağ üstten private network yazacak. Altta bir müddet sonra launch application buttonu çıkacak. Çıkınca tıklıyoruz. Mist açılıyor...
