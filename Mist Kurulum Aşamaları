@@ -1,5 +1,4 @@
-(Özgür Özvarış Bey tarafından başlatılan döküman, zamânla güncellenmek üzere eklendi.)
-
+ 
 1 . Aşama https://ethereum.org/cli burada belirtilen linklerden işletim sistemine göre doğru geth indirilip kuruluyor. Windows için https://geth.ethereum.org/downloads/ bu link kullanılabilir 
 
 2. Aşama geth setup kuruluyor (bütün kurulumları run as administrator olarak kurmakta vayda görüyorum.) 
