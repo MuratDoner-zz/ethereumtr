@@ -1,4 +1,4 @@
- 
+. 
 1. Aşama https://ethereum.org/cli burada belirtilen linklerden işletim sistemine göre doğru geth indirilip kuruluyor. Windows için https://geth.ethereum.org/downloads/ bu link kullanılabilir 
 
 2. Aşama geth setup kuruluyor (bütün kurulumları run as administrator olarak kurmakta vayda görüyorum.) 
@@ -20,3 +20,4 @@ Bendeki yeri cd "c:\program files\geth" burası
 9 – Mist'in çalıştırılması... 
 
 10 – Mist te sağ üstten private network yazacak. Altta bir müddet sonra launch application buttonu çıkacak. Çıkınca tıklıyoruz. Mist açılıyor...
+(Not: Mist'i ve Command Terminalini admin yetkisi ile çalıştırmalısınız)
