@@ -13,7 +13,12 @@ Bendeki yeri cd "c:\program files\geth" burası
 
 6. genesis dosyasını geth.exe nin olduğu klasöre koyuyoruz 
 
-7 – private networkun initialize edilmesi geth --datadir=./chaindata init ./genesis.json  
+7. private networkun initialize edilmesi
+   7.1. Eğer inter-process communication (IPC) üzerinden başlatılmak isteniyorsa:
+    geth --datadir=./chaindata init ./genesis.json  
+   7.2. Eğer JSON-RPC Endpoint üzerinden başlatılmak isteniyorsa:
+    geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
+    (Ayrıntılı bilgi için: https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
 8 – Bu aşamanın tam olarak ne olduğunu bilmiyorum ama sanırım listening yapmaya başlıyor. geth --datadir=./chaindata   
 
