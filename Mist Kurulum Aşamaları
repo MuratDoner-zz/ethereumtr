@@ -1,28 +1,47 @@
-. 
-1. Aşama https://ethereum.org/cli burada belirtilen linklerden işletim sistemine göre doğru geth indirilip kuruluyor. Windows için https://geth.ethereum.org/downloads/ bu link kullanılabilir 
+  
+1. 
+https://ethereum.org/cli 
+Burada belirtilen linklerden işletim sistemine göre doğru geth indirilip kuruluyor. 
+(Windows için https://geth.ethereum.org/downloads/ bu link kullanılabilir)
 
-2. Aşama geth setup kuruluyor (bütün kurulumları run as administrator olarak kurmakta vayda görüyorum.) 
+2. 
+Geth setup kuruluyor (bütün kurulumları run as administrator olarak kurmakta vayda görüyorum.) 
 
-3. Mist kurulması https://github.com/ethereum/mist/releases buradan mist kuruyoruz.. 
+3. 
+Mist kurulması:
+https://github.com/ethereum/mist/releases buradan mist kuruyoruz.. 
 
-4. Private ethereum networku kurulması cmd.exe run as administrator olarak çalıştırılıyor. Cd komutuyla geth in kurulu olduğu foldera gidiliyor. 
+4. 
+Private ethereum networku kurulması cmd.exe (administrator olarak) çalıştırılıyor.
+CD komutuyla Geth'in kurulu olduğu klasöre gidiliyor. 
 
 Bendeki yeri cd "c:\program files\geth" burası 
 
-5. genesis.json oluşturulması  https://github.com/tomw1808/truffle_eth_class2/blob/master/s01/genesis.json buradakigenesis.jsonu örnek alabilirsiniz. 
+5. 
+genesis.json oluşturulması  https://github.com/tomw1808/truffle_eth_class2/blob/master/s01/genesis.json buradakigenesis.jsonu örnek alabilirsiniz. 
 
-6. genesis dosyasını geth.exe nin olduğu klasöre koyuyoruz 
+6. 
+genesis dosyasını geth.exe nin olduğu klasöre koyuyoruz 
 
-7. private networkun initialize edilmesi
-   7.1. Eğer inter-process communication (IPC) üzerinden başlatılmak isteniyorsa:
-    geth --datadir=./chaindata init ./genesis.json  
-   7.2. Eğer JSON-RPC Endpoint üzerinden başlatılmak isteniyorsa:
-    geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
-    (Ayrıntılı bilgi için: https://github.com/ethereum/wiki/wiki/JSON-RPC)
+7. 
+Private networkun initialize edilmesi
+Geth --datadir=./chaindata init ./genesis.json  
 
-8 – Bu aşamanın tam olarak ne olduğunu bilmiyorum ama sanırım listening yapmaya başlıyor. geth --datadir=./chaindata   
+8.
+8.1.
 
-9 – Mist'in çalıştırılması... 
+ Eğer inter-process communication (IPC) üzerinden başlatılmak isteniyorsa:
+ geth --datadir=./chaindata   
+  
+8.2.
+ Eğer JSON-RPC Endpoint üzerinden başlatılmak isteniyorsa:
+ geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
+ (Ayrıntılı bilgi için: https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
-10 – Mist te sağ üstten private network yazacak. Altta bir müddet sonra launch application buttonu çıkacak. Çıkınca tıklıyoruz. Mist açılıyor...
+9.
+ Mist'in çalıştırılması... 
+
+10.
+ Mist te sağ üstten private network yazacak. Altta bir müddet sonra launch application buttonu çıkacak. Çıkınca tıklıyoruz. Mist açılıyor...
+
 (Not: Mist'i ve Command Terminalini admin yetkisi ile çalıştırmalısınız)
